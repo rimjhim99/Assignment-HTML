@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Restaurant Menu</title>
+</head>
+<body>
+
+    <h1 align="center">Interactive Restaurant Menu</h1>
+
+    <hr>
+
+    <h2>Welcome to Our Restaurant</h2>
+
+    <p>
+        Welcome to our restaurant! Click on different food items
+        in the image below to learn more about them.
+    </p>
+
+    <h2>Our Food Menu</h2>
+
+    <img src="food.jpg"
+         alt="Restaurant menu showing pizza, burger and fries"
+         width="600"
+         height="400"
+         usemap="#restaurant">
+
+    <map name="restaurant">
+
+        <!-- Circle 1: Pizza -->
+        <area shape="circle"
+              coords="230,280,80"
+              href="https://en.wikipedia.org/wiki/Pizza"
+              alt="Pizza"
+              target="_blank">
+
+        <!-- Circle 2: Burger -->
+        <area shape="circle"
+              coords="475,100,50"
+              href="https://en.wikipedia.org/wiki/Hamburger"
+              alt="Burger"
+              target="_blank">
+
+        <!-- Rectangle 1: French Fries -->
+        <area shape="rect"
+              coords="90,100,200,180"
+              href="https://en.wikipedia.org/wiki/French_fries"
+              alt="French Fries"
+              target="_blank">
+
+        <!-- Rectangle 2: Menu Card -->
+        <area shape="rect"
+              coords="0,0,150,70"
+              href="https://en.wikipedia.org/wiki/Menu"
+              alt="Restaurant Menu Card"
+              target="_blank">
+
+        <!-- Polygon 1: Sandwich -->
+        <area shape="poly"
+              coords="0,190,90,200,120,270,30,300"
+              href="https://en.wikipedia.org/wiki/Sandwich"
+              alt="Sandwich"
+              target="_blank">
+
+        <!-- Polygon 2: Cake Slice -->
+        <area shape="poly"
+              coords="390,220,470,190,530,260,440,300"
+              href="https://en.wikipedia.org/wiki/Cake"
+              alt="Cake Slice"
+              target="_blank">
+
+        <!-- Default Area: Other Parts of Image -->
+        <area shape="default"
+              href="https://en.wikipedia.org/wiki/Food"
+              alt="Other Food Items"
+              target="_blank">
+
+    </map>
+
+    <hr>
+
+    <h2>Food Items and Their Prices</h2>
+
+    <ul>
+        <li>Pizza - ₹250</li>
+        <li>Burger - ₹150</li>
+        <li>French Fries - ₹100</li>
+        <li>Sandwich - ₹120</li>
+        <li>Cake Slice - ₹90</li>
+    </ul>
+
+    <p>
+        Click on the food image to explore more information
+        about your favourite dishes.
+    </p>
+
+</body>
+</html>
