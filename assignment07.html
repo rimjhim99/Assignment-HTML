@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>World Map Explorer</title>
+</head>
+<body>
+
+    <h1>World Map Explorer</h1>
+    <p>Click on a country to explore more information about it.</p>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg"
+         alt="World Map"
+         usemap="#worldmap"
+         width="1000"
+         height="500">
+
+    <map name="worldmap">
+
+        <!-- India: Circle -->
+        <area shape="circle"
+              coords="650,260,35"
+              href="https://en.wikipedia.org/wiki/India"
+              alt="India"
+              target="_blank">
+
+        <!-- United States: Rectangle -->
+        <area shape="rect"
+              coords="100,100,280,200"
+              href="https://en.wikipedia.org/wiki/United_States"
+              alt="United States"
+              target="_blank">
+
+        <!-- Australia: Polygon -->
+        <area shape="poly"
+              coords="760,340,820,320,870,350,850,400,800,410,770,380"
+              href="https://en.wikipedia.org/wiki/Australia"
+              alt="Australia"
+              target="_blank">
+
+        <!-- Default: Any other clickable map region -->
+        <area shape="default"
+              href="https://en.wikipedia.org/wiki/World"
+              alt="World information"
+              target="_blank">
+
+    </map>
+
+    <h2>Countries to Explore</h2>
+    <ul>
+        <li><a href="https://en.wikipedia.org/wiki/India" target="_blank">India</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/United_States" target="_blank">United States</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Australia" target="_blank">Australia</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/World" target="_blank">World Information</a></li>
+    </ul>
+
+</body>
+</html>
